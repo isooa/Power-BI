@@ -1,0 +1,7 @@
+//First you have to specify the start date in the format YYYY,MM,DD on blank query
+
+=#date(2021,1,1)
+
+//Select Fx and input formular
+
+= List.Dates (Source, Number.From(DateTime.LocalNow()) - Number.From(Source), #duration(1,0,0,0))
